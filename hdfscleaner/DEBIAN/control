@@ -1,0 +1,10 @@
+Package: hdfscleaner-saturn
+Essential: no
+Priority: optional
+Section: main
+Maintainer: Wellness Labs <agonzalez@wtelecom.es>
+Architecture: amd64
+Version: 0.1-4
+Depends: python-requests, python-dateutil, python-pip
+Homepage: https://github.com/wtelecom/hdfscleaner
+Description: Hdfscleaner is a tool that deletes applications (APP) all old files from Hadoop Cluster.

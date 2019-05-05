@@ -1,0 +1,31 @@
+#!/bin/bash
+
+set -e
+
+case "$1" in
+  purge|remove|upgrade|failed-upgrade|abort-install|abort-upgrade|disappear)
+
+    if [ -d /etc/hdfscleaner ]; then
+	echo -e "Deleting /etc/hdfscleaner directory..."
+	rm -rf /etc/hdfscleaner && echo " ...OK"
+    fi
+
+    if [ -d /var/log/hdfscleaner ]; then
+	echo -e "Deleting /var/log/hdfscleaner..."
+	rm -rf /var/log/hdfscleaner && echo " ...OK"
+    fi
+
+    echo -e "Uninstall PostgreSQL python-client..."
+    pip uninstall psycopg2-binary psycopg2 -y
+
+    echo -e "Uninstall HDFS client..."
+    pip uninstall hdfs
+    
+    exit 0
+;;
+
+*)
+    echo "postrm called with unknown argument \`$1'" >&2
+    exit 1
+;;
+esac
