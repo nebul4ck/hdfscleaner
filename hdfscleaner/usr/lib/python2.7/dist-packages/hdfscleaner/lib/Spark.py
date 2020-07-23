@@ -6,8 +6,8 @@
    :synopsis: Clean Hadoop old files.
 .. moduleauthor::
    :Nickname: Alberto González
-   :mail: agonzalez@wtelecom.es
-   :Web :	https://nebul4ck.wordpress.com/
+   :mail: a.gonzalezmesas@gmail.com
+   :Web :	https://github.com/nebul4ck/hdfscleaner
 """
 
 from hdfs import InsecureClient

@@ -15,12 +15,12 @@ case "$1" in
 	rm -rf /var/log/hdfscleaner && echo " ...OK"
     fi
 
-    echo -e "Uninstall PostgreSQL python-client..."
-    pip uninstall psycopg2-binary psycopg2 -y
-
     echo -e "Uninstall HDFS client..."
-    pip uninstall hdfs
-    
+    sudo pip uninstall hdfs -y
+
+    echo -e "Uninstall PostgreSQL python-client..."
+    sudo pip uninstall psycopg2 psycopg2-binary  -y
+
     exit 0
 ;;
 

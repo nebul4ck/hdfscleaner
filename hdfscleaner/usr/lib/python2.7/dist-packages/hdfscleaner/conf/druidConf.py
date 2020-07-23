@@ -30,6 +30,6 @@ key_type = 'type'
 # PostgreSQL SETTINGS
 postgresql_host = 'postgresql01'
 user_db = 'druid'
-pass_user_db = 'w4nk1ng'
+pass_user_db = 'pasword'
 db_druid = 'druid'
 table_segments = 'druid_segments'

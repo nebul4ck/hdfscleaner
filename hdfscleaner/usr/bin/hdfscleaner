@@ -6,9 +6,9 @@
    :platform: GNU/Linux
    :synopsis: Clean Hadoop old files.
 .. moduleauthor::
-   :Nickname: Alberto González
-   :mail: agonzalez@wtelecom.es
-   :Web :	https://nebul4ck.wordpress.com/
+   :Nickname: nebul4ck
+   :mail: a.gonzalezmesas@gmail.com
+   :Web :	https://github.com/nebul4ck/hdfscleaner
 """
 import sys
 import pyconcrete

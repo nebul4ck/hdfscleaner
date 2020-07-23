@@ -5,8 +5,8 @@
    :platform: Unix/Linux
    :synopsis: Auto loader class.
 .. moduleauthor::
-   :Nickname: Juan Ramón
-   :mail:  jrgonzalez@wtelecom.es
+   :Nickname: nebul4ck
+   :mail:  a.gonzalezmesas@gmail.com
    :Web :
 """
 

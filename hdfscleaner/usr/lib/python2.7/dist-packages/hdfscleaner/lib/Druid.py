@@ -6,8 +6,8 @@
    :synopsis: Clean Hadoop old files.
 .. moduleauthor::
    :Nickname: Alberto González
-   :mail: agonzalez@wtelecom.es
-   :Web :	https://nebul4ck.wordpress.com/
+   :mail: a.gonzalezmesas@gmail.com
+   :Web :	https://github.com/nebul4ck/hdfscleaner
 """
 
 import requests
@@ -40,7 +40,7 @@ class Druid(object):
 		self.key_type = key_type
 
 	def calc_dates(self):
-		""" This function returns the date for today. With this date the second interval from segment 
+		""" This function returns the date for today. With this date the second interval from segment
 		timestamp will be calculated """
 		str_datetime_today = str(datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S"))
 		str_datetime_tuple = time.strptime(str_datetime_today, "%Y-%m-%d %H:%M:%S")
@@ -176,7 +176,7 @@ class Druid(object):
 		""" Finds the rule loadByPeriod, gets the period (ej P1M, 1 month) and launches kill segments task """
 		kill_tasks = []
 		msg_stderr = []
-		
+
 		# [{datasource: {'rules': [{u'type': u'loadByPeriod', u'period': u'P2M', u'tieredReplicants': {u'_default_tier': 1}},
 		#{u'type': u'dropForever'}, {u'type': u'loadByPeriod', u'period': u'P1M', u'tieredReplicants': {u'_default_tier': 1}}],
 		#'older_segment': u'2017-10-31T17:00:00.000Z'}}]
